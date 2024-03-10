@@ -1,6 +1,10 @@
 const express = require("express");
+const { postquestion } = require("./routers/question");
+const { getquestion } = require("./routers/getquestion");
+const cors = require("cors");
 const app = express();
-app.get("/", (req, res) => {
-  res.send("hell0");
-});
+app.use(cors());
+app.use(express.json());
+app.post("/", postquestion);
+app.get("/getquestion", getquestion);
 module.exports = app;
