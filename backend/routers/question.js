@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { questions } = require("../schema/questions");
+const { HtmlQuestions } = require("../schema/questions");
 function postquestion(req, res) {
   const question = new questions({
     question: req.body.question,

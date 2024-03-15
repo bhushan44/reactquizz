@@ -1,6 +1,15 @@
 const mongoose = require("mongoose");
 const fs = require("fs");
-const { questions } = require("./schema/questions");
+const {
+  questions,
+  HtmlQuestions,
+  ReactQuestions,
+  CssQuestions,
+  JsQuestions,
+  NodeQuestions,
+  MongoDBQuestions,
+  ExpressQuestions,
+} = require("./schema/questions");
 // const express = require("express");
 
 // const app = require("./app");
@@ -17,11 +26,11 @@ mongoose
   .catch((e) => {
     console.log(e);
   });
-const question = JSON.parse(fs.readFileSync("./data/questions.json", "utf-8"));
+const question = JSON.parse(fs.readFileSync("./data/mongodb.json", "utf-8"));
 console.log(question);
 async function insert() {
   try {
-    await questions.create(question.questions);
+    await MongoDBQuestions.create(question.questions);
     console.log("success");
   } catch (e) {
     console.log(e);

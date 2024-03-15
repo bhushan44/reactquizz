@@ -1,0 +1,149 @@
+{
+  "questions": [
+    {
+      "question": "What is Express.js?",
+      "options": [
+        "A front-end framework",
+        "A back-end framework",
+        "A testing framework",
+        "A database framework"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which npm package is used to install Express.js?",
+      "options": ["express", "expressjs", "node-express", "express-server"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you create a new Express.js application?",
+      "options": [
+        "express create app",
+        "express new app",
+        "express --create app",
+        "express app"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to start a server in Express.js?",
+      "options": [
+        "app.listen()",
+        "server.start()",
+        "express.start()",
+        "listen()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you define a route in Express.js?",
+      "options": [
+        "route('/path', handler)",
+        "app.route('/path', handler)",
+        "app.get('/path', handler)",
+        "app.post('/path', handler)"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is middleware in Express.js?",
+      "options": [
+        "A database",
+        "A function that has access to the request and response objects",
+        "A server",
+        "A framework"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to handle POST requests in Express.js?",
+      "options": ["app.post()", "app.get()", "app.route()", "app.use()"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'body-parser' middleware in Express.js?",
+      "options": [
+        "To parse request bodies",
+        "To parse URL parameters",
+        "To handle cookies",
+        "To handle sessions"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you install the 'body-parser' middleware in Express.js?",
+      "options": [
+        "npm install body-parser",
+        "npm install express-body-parser",
+        "npm body-parser install",
+        "npm body-parser"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to set up a static directory in Express.js?",
+      "options": ["app.use()", "app.static()", "app.set()", "app.dir()"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you handle errors in Express.js?",
+      "options": [
+        "app.error()",
+        "app.use(errorHandler)",
+        "app.catchError()",
+        "app.handleErrors()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'morgan' middleware in Express.js?",
+      "options": [
+        "To log HTTP requests",
+        "To handle errors",
+        "To parse request bodies",
+        "To set up a static directory"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to set up template engines in Express.js?",
+      "options": ["app.engine()", "app.set()", "app.use()", "app.render()"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you handle routing errors in Express.js?",
+      "options": [
+        "app.routeError()",
+        "app.errorHandler()",
+        "app.catchError()",
+        "app.use(errorHandler)"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'express-session' middleware in Express.js?",
+      "options": [
+        "To handle sessions",
+        "To parse request bodies",
+        "To log HTTP requests",
+        "To set up template engines"
+      ],
+      "correctOption": 0,
+      "points": 10
+    }
+  ]
+}

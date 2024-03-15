@@ -6,5 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.post("/", postquestion);
-app.get("/getquestion", getquestion);
+app.get("/getquestion/:name", getquestion);
+
+// app.get("/")
 module.exports = app;

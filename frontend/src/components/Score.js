@@ -1,6 +1,8 @@
 import React from "react";
-
-export default function Score({ score, dispatch }) {
+import { useContext } from "react";
+import { QuizzContext } from "../Homepage1";
+export default function Score() {
+  const { score, dispatch } = useContext(QuizzContext);
   return (
     <div>
       your score is{score}

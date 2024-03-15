@@ -1,0 +1,129 @@
+{
+  "questions": [
+    {
+      "question": "What is JavaScript?",
+      "options": [
+        "A programming language",
+        "A markup language",
+        "A database management system",
+        "A server-side scripting language"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which symbol is used for comments in JavaScript?",
+      "options": ["//", "/* */", "<!-- -->", "#"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you declare a variable in JavaScript?",
+      "options": ["var", "int", "string", "let"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the output of `typeof []`?",
+      "options": ["array", "object", "string", "undefined"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which function is used to print something in the browser console?",
+      "options": ["console.print()", "print()", "console.log()", "log()"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you create a function in JavaScript?",
+      "options": [
+        "function: myFunction()",
+        "create function myFunction()",
+        "function myFunction()",
+        "new function myFunction()"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the `addEventListener` method in JavaScript?",
+      "options": [
+        "To add a new element to the DOM",
+        "To attach an event handler to an element",
+        "To create a new event",
+        "To remove an event handler from an element"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What does the `innerHTML` property do in JavaScript?",
+      "options": [
+        "It sets the content of a <script> element",
+        "It sets the content of a <div> element",
+        "It sets the content of an HTML element",
+        "It sets the content of a <p> element"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which statement is used to stop a loop in JavaScript?",
+      "options": ["stop", "exit", "break", "halt"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the output of `5 + '5'` in JavaScript?",
+      "options": ["10", "'55'", "55", "Error"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to convert a string to uppercase in JavaScript?",
+      "options": ["toUpperCase()", "upperCase()", "toUpper()", "caseUpper()"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the `push()` method do in JavaScript?",
+      "options": [
+        "Adds a new item to the end of an array",
+        "Removes the last item of an array",
+        "Returns the first element of an array",
+        "Sorts the elements of an array"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which symbol is used for strict equality in JavaScript?",
+      "options": ["==", "===", "!=", "!=="],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the `map()` method in JavaScript?",
+      "options": [
+        "To create a new array with the results of calling a function for every array element",
+        "To check if all array elements pass a test",
+        "To remove the last element of an array",
+        "To add new elements to an array"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which statement correctly declares an array in JavaScript?",
+      "options": [
+        "var myArray = {}",
+        "var myArray = []",
+        "var myArray = new Array()",
+        "var myArray = array[]"
+      ],
+      "correctOption": 1,
+      "points": 10
+    }
+  ]
+}

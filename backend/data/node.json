@@ -1,0 +1,128 @@
+{
+  "questions": [
+    {
+      "question": "What is Node.js?",
+      "options": [
+        "A front-end framework",
+        "A back-end framework",
+        "A testing framework",
+        "A database framework"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which module is used to create a web server in Node.js?",
+      "options": ["http", "fs", "url", "net"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you include a module in Node.js?",
+      "options": [
+        "require('module')",
+        "include('module')",
+        "import('module')",
+        "use('module')"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the package manager for Node.js?",
+      "options": ["npm", "yarn", "Node Package Manager", "Node Installer"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a correct way to handle asynchronous operations in Node.js?",
+      "options": ["Callbacks", "Promises", "Async/Await", "All of the above"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to read user input from the command line in Node.js?",
+      "options": ["readline()", "input()", "console.input()", "stdin()"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you start a Node.js application?",
+      "options": [
+        "node start app.js",
+        "node app.js",
+        "npm start",
+        "run app.js"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which module is used to work with files in Node.js?",
+      "options": ["fs", "file", "fileSystem", "files"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'util' module in Node.js?",
+      "options": [
+        "To work with utilities",
+        "To work with files",
+        "To work with web servers",
+        "To work with databases"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to write data to a file in Node.js?",
+      "options": ["writeFile()", "saveFile()", "writeToFile()", "createFile()"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the 'process' object in Node.js represent?",
+      "options": [
+        "The current process",
+        "The global object",
+        "The file system",
+        "The web server"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to append data to a file in Node.js?",
+      "options": [
+        "appendFile()",
+        "appendToFile()",
+        "writeToFile()",
+        "addToFile()"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'os' module in Node.js?",
+      "options": [
+        "To work with operating system utilities",
+        "To work with files",
+        "To work with web servers",
+        "To work with databases"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you create a simple server in Node.js that listens on port 3000?",
+      "options": [
+        "http.createServer((req, res) => {}).listen(3000);",
+        "server.create(3000);",
+        "node.createServer(3000);",
+        "server.listen(3000);"
+      ],
+      "correctOption": 0,
+      "points": 10
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "questions": [
+    {
+      "question": "What is MongoDB?",
+      "options": [
+        "A relational database management system",
+        "A document-oriented database management system",
+        "A graph database management system",
+        "A key-value database management system"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is true about MongoDB?",
+      "options": [
+        "It is a SQL database",
+        "It stores data in tables",
+        "It is schema-less",
+        "It does not support indexes"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How do you start the MongoDB server?",
+      "options": ["mongod", "mongo start", "start mongo", "mongodb start"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a valid way to query data in MongoDB?",
+      "options": [
+        "db.collection.select()",
+        "db.collection.find()",
+        "db.collection.query()",
+        "db.collection.search()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the '_id' field in MongoDB?",
+      "options": [
+        "To store the document's ID",
+        "To store the database's ID",
+        "To store the collection's ID",
+        "To store the server's ID"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of the following is a valid way to insert a document in MongoDB?",
+      "options": [
+        "db.collection.add()",
+        "db.collection.insert()",
+        "db.collection.create()",
+        "db.collection.put()"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you specify conditions for a query in MongoDB?",
+      "options": ["conditions()", "where()", "filter()", "find()"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to update a document in MongoDB?",
+      "options": ["updateOne()", "modify()", "change()", "update()"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'mongoose' library in Node.js?",
+      "options": [
+        "To query data in MongoDB",
+        "To manage MongoDB databases",
+        "To connect to a MongoDB database",
+        "To model application data"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to delete a document in MongoDB?",
+      "options": ["remove()", "delete()", "deleteOne()", "drop()"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'findOne()' method in MongoDB?",
+      "options": [
+        "To find all documents in a collection",
+        "To find the first document in a collection",
+        "To find a specific document in a collection",
+        "To find a random document in a collection"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "How do you specify the fields to return in a query in MongoDB?",
+      "options": ["select()", "fields()", "projection()", "include()"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'find()' method in MongoDB?",
+      "options": [
+        "To find all documents in a collection",
+        "To find the first document in a collection",
+        "To find a specific document in a collection",
+        "To find a random document in a collection"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which method is used to limit the number of documents returned in a query in MongoDB?",
+      "options": ["limit()", "count()", "max()", "find()"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the purpose of the 'sort()' method in MongoDB?",
+      "options": [
+        "To sort documents in ascending order",
+        "To sort documents in descending order",
+        "To sort documents based on a field",
+        "All of the above"
+      ],
+      "correctOption": 3,
+      "points": 10
+    }
+  ]
+}

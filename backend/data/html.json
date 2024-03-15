@@ -1,0 +1,113 @@
+{
+  "questions": [
+    {
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "Hyper Tool Markup Language"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to create a hyperlink?",
+      "options": ["<a>", "<link>", "<href>", "<hyperlink>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to define a table row?",
+      "options": ["<tr>", "<td>", "<table>", "<row>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the correct HTML for creating a checkbox?",
+      "options": [
+        "<check>",
+        "<checkbox>",
+        "<input type='checkbox'>",
+        "<input type='check'>"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which HTML attribute is used to define inline styles?",
+      "options": ["class", "style", "font", "css"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to define a list item?",
+      "options": ["<li>", "<ul>", "<ol>", "<list>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What does the 'alt' attribute in an image tag do?",
+      "options": [
+        "Defines the alignment of the image",
+        "Provides alternative text for the image",
+        "Specifies the size of the image",
+        "Specifies a link for the image"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to define a paragraph?",
+      "options": ["<p>", "<para>", "<pg>", "<paragraph>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How do you add a comment in HTML?",
+      "options": [
+        "'This is a comment",
+        "//This is a comment",
+        "<!--This is a comment-->",
+        "#This is a comment"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to define a table?",
+      "options": ["<table>", "<tr>", "<td>", "<th>"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the correct HTML for creating a hyperlink that opens in a new tab?",
+      "options": [
+        "<a href='url' target='_blank'>link text</a>",
+        "<a href='url' new-tab>link text</a>",
+        "<a href='url' target='new'>link text</a>",
+        "<a href='url' target='tab'>link text</a>"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which attribute is used to provide an advisory text about an element or its contents?",
+      "options": ["advisory", "title", "tooltip", "desc"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "In HTML, which attribute is used to specify that an input field must be filled out?",
+      "options": ["validate", "required", "fill", "mandatory"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which tag is used to define a footer in HTML?",
+      "options": ["<footer>", "<end>", "<foot>", "<bottom>"],
+      "correctOption": 0,
+      "points": 10
+    }
+  ]
+}

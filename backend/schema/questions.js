@@ -17,4 +17,20 @@ const questionschema = new mongoose.Schema({
   },
 });
 const questions = mongoose.model("question", questionschema);
-module.exports = { questions };
+const HtmlQuestions = mongoose.model("HtmlQuestion", questionschema);
+const ReactQuestions = mongoose.model("ReactQuestion", questionschema);
+const CssQuestions = mongoose.model("CssQuestion", questionschema);
+const JsQuestions = mongoose.model("JsQuestion", questionschema);
+const NodeQuestions = mongoose.model("NodeQuestion", questionschema);
+const ExpressQuestions = mongoose.model("ExpressQuestion", questionschema);
+const MongoDBQuestions = mongoose.model("MongoDBQuestion", questionschema);
+module.exports = {
+  questions,
+  HtmlQuestions,
+  ReactQuestions,
+  CssQuestions,
+  JsQuestions,
+  NodeQuestions,
+  ExpressQuestions,
+  MongoDBQuestions,
+};
