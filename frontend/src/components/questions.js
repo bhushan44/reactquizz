@@ -37,7 +37,7 @@ export default function Questions({ name }) {
         <h1 className="pt-6  text-2xl text-white lg:text-4xl">
           {question.question}
         </h1>
-        <div className="  boreder mt-3 flex  w-3/4  flex-col  items-center  justify-center gap-5 border border-red-50 p-5 lg:mt-20">
+        <div className="  boreder mt-3 flex  w-3/4  flex-col  items-center  justify-center gap-5 rounded-lg border border-red-50 p-5 lg:mt-20">
           {question.options.map((o, i) => {
             return (
               <div

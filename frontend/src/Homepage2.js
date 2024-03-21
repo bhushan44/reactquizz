@@ -37,7 +37,7 @@ export function Homepage2() {
       {status === "ready" && (
         <>
           {" "}
-          <h1 className="pt-20 text-center text-7xl text-white">
+          <h1 className="pt-20 text-center  text-4xl text-white lg:text-7xl">
             {name} quizz
           </h1>
           <h1 className=" pt-3 text-center text-3xl text-white lg:text-5xl">
