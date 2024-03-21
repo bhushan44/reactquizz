@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Loading() {
   return (
-    <div>
-      <h1>...loading</h1>
+    <div className="flex items-center justify-center">
+      <h1 className="text-5xl text-white">...loading</h1>
     </div>
   );
 }

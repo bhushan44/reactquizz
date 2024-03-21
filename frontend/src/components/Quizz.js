@@ -1,23 +1,20 @@
-import React from "react";
-import { createContext } from "react";
-import { useReducer } from "react";
-import { useEffect } from "react";
-
+import React, { createContext, useReducer, useEffect } from "react";
 import { useParams } from "react-router-dom";
+// import { withRouter } from "react-router-dom";
+// import { withRouter } from "react-router-dom";
+
 export const QuizzContext = createContext();
+
 function reducer(state, action) {
-  const object = action.payload;
-  console.log(object);
   switch (action.type) {
     case "fetchsuccess":
       return {
         ...state,
-        questions:
-          action.payload && action.payload.length > 0 ? action.payload : null,
-        status: "ready",
+        questions: action.payload || [],
+        status: action.payload && action.payload.length > 0 ? "ready" : "error",
         timer:
           action.payload && action.payload.length > 0
-            ? 10 * state.questions.length - 1
+            ? 10 * action.payload.length - 1
             : 0,
       };
     case "fetchfail":
@@ -37,7 +34,6 @@ function reducer(state, action) {
         ...state,
         s1: "active",
         question: state.questions[state.index],
-
         score:
           action.payload === state.question.correctOption
             ? state.score + state.question.points
@@ -58,22 +54,41 @@ function reducer(state, action) {
     case "restart":
       return {
         ...state,
-        // questions: [],
         status: "ready",
         index: 0,
         score: 0,
-        timer: 10 * state.questions.length,
+        timer: state.questions.length > 0 ? 10 * state.questions.length : 0,
         s1: "",
       };
-
+    case "indexreset":
+      return {
+        ...state,
+        index: 0,
+      };
     default:
-      return 0;
+      return state;
   }
 }
-export default function QuizzProvider({ children, name }) {
-  // const { name } = useParams();
 
-  const initialstate = {
+function QuizzProvider({ children }) {
+  // const { name } = useParams();
+  // console.log(name, "params");
+
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     try {
+  //       const res = await fetch(`http://localhost:5000/getquestion/${name}`);
+  //       const data = await res.json();
+  //       dispatch({ type: "fetchsuccess", payload: data.question });
+  //       console.log(data);
+  //     } catch (e) {
+  //       dispatch({ type: "fetchfail" });
+  //     }
+  //   }
+  //   fetchData();
+  // }, [name]);
+
+  const initialState = {
     questions: [],
     status: "loading",
     index: 0,
@@ -84,23 +99,25 @@ export default function QuizzProvider({ children, name }) {
   };
 
   const [{ questions, status, index, s1, timer, score, question }, dispatch] =
-    useReducer(reducer, initialstate);
+    useReducer(reducer, initialState);
   const len =
-    questions && questions.length > 0 ? index >= questions?.length - 1 : false;
+    questions && questions.length > 0 ? index >= questions.length - 1 : false;
   const length = questions ? questions.length : 0;
+
   return (
     <div>
       <QuizzContext.Provider
         value={{
           question: questions[index],
-          dispatch: dispatch,
-          status: status,
-          s1: s1,
+          dispatch,
+          status,
+          s1,
           index,
           len,
           timer,
           length,
           score,
+          questions,
         }}
       >
         {children}
@@ -108,4 +125,5 @@ export default function QuizzProvider({ children, name }) {
     </div>
   );
 }
-// export { QuizzContext };
+
+export default QuizzProvider;

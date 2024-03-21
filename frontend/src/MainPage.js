@@ -28,19 +28,12 @@ export default function MainPage() {
   ]);
   // const [index, setindex] = useState(0);
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>MERN QuizMaster</h1>
+    <div className=" lg: lg: bg-slate-800 pt-20 ">
+      <h1 className=" lg: fixed top-0  w-full bg-slate-300 text-center text-3xl  text-white lg:text-5xl">
+        MERN QuizMaster
+      </h1>
 
-      <div
-        style={{
-          display: "flex",
-          // flexDirection: "row",
-          flexWrap: "wrap",
-          gap: "20px",
-          margin: "50px",
-          width: "100%",
-        }}
-      >
+      <div className=" m-30 flex flex-row flex-wrap justify-center gap-3">
         {/* <Link to="/homepage/react">
         <img src={react} alt="bhushan" width="500px" height="500px"></img>
       </Link>
@@ -50,7 +43,11 @@ export default function MainPage() {
           return (
             <div>
               <Link to={`/homepage1/${name[i]}`}>
-                <img src={o} alt="bhushan" width="300px" height="300px"></img>
+                <img
+                  src={o}
+                  alt="bhushan"
+                  className=" h-60 w-60 lg:h-96 lg:w-96"
+                ></img>
               </Link>
             </div>
           );
