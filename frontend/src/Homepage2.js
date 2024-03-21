@@ -14,7 +14,9 @@ export function Homepage2() {
     function () {
       async function api() {
         try {
-          const res = await fetch(`http://localhost:5000/getquestion/${name}`);
+          const res = await fetch(
+            `https://reactquizz-9.onrender.com/getquestion/${name}`,
+          );
 
           const data = await res.json();
 
